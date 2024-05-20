@@ -33,6 +33,6 @@ I summarized common Data Enginner skills in some job descriptions. (order reflec
 - business acumen
 
 And I assign priority levels according to the difficulty and my proficiency.
-- top priority: ETL pipeline, data warehousing, cloud, scripting (Unix, Python), database design
-- medium: data modeling, big data, streaming technology
+- top priority: ETL pipeline, data warehousing, cloud, scripting (Unix, Python), streaming technology, 
+- medium: data modeling, big data, database design, scripting (SQL, Pyspark)
 - less priority: data visualization, machine learning, analytical, business
