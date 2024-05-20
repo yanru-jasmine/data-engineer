@@ -48,6 +48,29 @@ And I assign priority levels according to the difficulty and my proficiency.
 6. 学习OLAP。联机分析处理OLAP是用于快速通过计算完成多维度分析性数据查询功能的一种方法，也是数据仓库的一个重要使用功能。在了解了OLAP的逻辑概念，体系结构与基本功能后，可以学习使用下大数据上流行的OLAP工具。如Kylin，Druid。
 7. 学习BI工具。商业智能（BI）工具是利用一组方法和技术来准备，呈现和帮助分析数据的工具。推荐学习比较流行的Tableau, SuperSet，都即可以连接传统的数据库，也支持大数据平台。
 
+## Roadmap
+https://medium.com/@darshilp/roadmap-for-data-engineering-2023-13f62f85d866
+1. computer science fundamentals: Harvard’s CS50. https://www.youtube.com/watch?v=IDDmrzzB14M&list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4
+   - Python
+   - SQL
+   - Linux Command
+2. data engineering fundamentals
+   - data warehouse
+     - fundamentals: “The Data Warehouse Toolkit” by Ralph Kimball.
+     - data warehouses tools: Snowflake (BigQuery, Redshift) - Udemy
+   - data processing framework
+     - Batch processing: Apache Spark (practice with Spark on Databrick and use PySpark (Python) as the language)
+     - Real-time processing: Apache Kafka, Apache Flink, and Apache Storm (pick one and learn about it)
+   - cloud platform: Azure, AWS, GCP
+   - ETL pipeline: Apache Airflow
+3. advance level skills
+   - Modern Data Stack (MDS): understand core use cases
+     - DBT (Data Build Tool)
+   - understanding security, networking, deployment, and other related topics.
+     - Docker or Kubernetes
+     - Designing Data-Intensive Applications
+     - Fundamentals of Data Engineering
+    
 # Resources
 https://dataengineering.wiki/Concepts/Concepts
 
