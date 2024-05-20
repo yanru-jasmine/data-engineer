@@ -9,3 +9,30 @@ There are five factors that really matter to me: opening, remote, high salary (1
 In conclusion, Data Engineer is the best choice for me at current stage.
 
 # What
+I summarized common Data Enginner skills in some job descriptions. (order reflect importance)
+- ETL pipeline
+- data warehousing (AWS Redshift, Google BigQuery, Snowflake)
+- data modeling
+- data integration (SLA)
+- cloud (Azure, AWS, GCP)
+- big data (terabyte to petabyte scale)
+- database design (schema design)
+- scripting (Python, Pyspark, Scala, SQL, Unix Shell scripting)
+- data quality (check automation)
+- data validation (testing & monitoring)
+- streaming technology
+- data processing pattern (batch, stream)
+- performance optimization
+- data goverance
+- Agile
+- information management
+- data visualization/business intelligence
+- machine learning
+- analytical
+- problem-solving
+- business acumen
+
+And I assign priority levels according to the difficulty and my proficiency.
+1st: ETL pipeline, data warehousing, cloud, scripting (Unix, Python), database design
+2nd: data modeling, big data, streaming technology
+3rd: data visualization, machine learning, analytical, business
