@@ -38,6 +38,7 @@ And I assign priority levels according to the difficulty and my proficiency.
 - less priority: data visualization, machine learning, analytical, business
 
 
+数据源->ETL -> 数据仓库存储与管理-> OLAP -> BI工具
 
 1. 先了解数据源，也就是我们的业务产生的数据。一般来源于日志，IOT(前端设备)，或者其他的系统，需要找资料了解各行各业数据的产生、收集的方式及特点。
 2. 学习数据存储。传统的关系型数据库：oracle，mysql等。大数据环境下，Hbase是最流行和使用最广的分布式列式数据库，Hive是最经典和常用的数仓工具。SQL的语法与使用也是必不可少的。
