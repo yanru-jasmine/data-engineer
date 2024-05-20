@@ -53,7 +53,7 @@ https://medium.com/@darshilp/roadmap-for-data-engineering-2023-13f62f85d866
 1. computer science fundamentals: Harvard’s CS50. https://www.youtube.com/watch?v=IDDmrzzB14M&list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4
    - Python https://cs50.harvard.edu/python/2022/weeks/0/
    - SQL
-   - Linux Command: Unix in a Nutshell
+   - Linux Command: Unix in a Nutshell https://berkeley-scf.github.io/tutorial-unix-basics/
 2. data engineering fundamentals
    - data warehouse
      - fundamentals: “The Data Warehouse Toolkit” by Ralph Kimball.
