@@ -32,7 +32,7 @@ def test_square():
 
 if __name__ == "__main__":
     main()
-
+```
 
 # pytest
 ```python
@@ -58,7 +58,7 @@ if __name__ == "__main__":
   def test_str():
       with pytest.raises(TypeError):
           square("cat")
-
+```
 ## organizing tests into folder
 - objective: run multiple tests with a single command
 - steps:
