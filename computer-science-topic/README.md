@@ -62,7 +62,89 @@ for arg in sys.argv[1:]:
 # save the animated gif as costumes.gif
 images[0].save(
     "costumes.gif", save_all=True, append_images=[images[1]], duration=200, loop=0
+
 )
 
 
 ```
+
+
+
+# Program paradigms
+- Imperative – code directly controls execution flow and state change
+    - procedural – organized as procedures that call each other
+    - object-oriented – organized as objects that contain both data structure and associated behavior
+        
+- Declarative – code declares properties of the desired result, but not how to compute it
+    - functional – a desired result is declared as the value of a series of function evaluations
+    - logic – a desired result is declared as the answer to a question about a system of facts and rules
+    - reactive – a desired result is declared with data streams and the propagation of change
+
+ ## OOP (object-oriented programming)
+ ```python
+# Classes are a way by which, in object-oriented programming, we can create our own type of data and give them names.
+# Convention: Class name is capitalized
+# a class is an object or an instance
+class Student:
+
+    # Methods:
+    # __init__ method in Python is used to initialize objects of a class. It is also called a constructor.
+    def __init__(self, name, house, patronus=None):
+
+        # use raise to create exceptions that alerts a potential error created by the user 
+        if not name:
+            raise ValueError("Missing name")
+        self.name = name
+        self.house = house
+        self.patronus = patronus
+
+    # def __str__(self) provides a means by which a student is returned when called.
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
+    # Decoractors:
+    # use @property above a function to define house as a property of our class
+    # by which we can define how attribute of our class (_house) should be set and retrieved
+    # Getter for house
+    @property
+    def house(self):
+        return self._house
+
+    # Setter for house
+    @house.setter
+    def house(self, house):
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
+        self._house = house        # house is a property, while _house is an attribute  ("_" indicates users should not modify this value directly, should only be set through the house setter)
+
+    def charm(self):
+        match self.patronus:
+            case "Stag":
+                return "🐴"
+            case "Otter":
+                return "🦦"
+            case "Jack Russell terrier":
+                return "🐶"
+            case _:
+                return "🪄"
+
+
+def main():
+    student = get_student()
+    print("Expecto Patronum!")
+    print(student.charm())
+
+
+def get_student():
+    name = input("Name: ")
+    house = input("House: ")
+    patronus = input("Patronus: ") or None
+    return Student(name, house, patronus)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+
+
