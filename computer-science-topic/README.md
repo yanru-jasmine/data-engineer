@@ -81,6 +81,7 @@ images[0].save(
     - reactive – a desired result is declared with data streams and the propagation of change
 
  ## OOP (object-oriented programming)
+ Python is an object oriented programming language, though we began with procedural programming.
  ```python
 # Classes are a way by which, in object-oriented programming, we can create our own type of data and give them names.
 # Convention: Class name is capitalized
@@ -235,8 +236,7 @@ if __name__ == "__main__":
     main()
 ```
 
-# unpacking
-## .split()
+# unpacking for print
 ## index
 ## total + * for list
 ```python
@@ -274,3 +274,39 @@ def f(*args, **kwargs):
 f(galleons=100, sickles=50, knuts=25)
 ```
 return `Named: {'galleons': 100, 'sickles': 50, 'knuts': 25}`
+
+# Modify List
+List comprehension >  map
+map may be microscopically faster in some cases (when you're not making a lambda for the purpose, but using the same function in map and a list comprehension). 
+List comprehensions may be faster in other cases and most (not all) Pythonistas consider them more direct and clearer.
+## map
+`map` allows you to map a function to a sequence of values which has two arguments
+- First, it takes a function we want applied to every element of a list. 
+- Second, it takes that list itself
+```python
+def main():
+    yell("This", "is", "CS50")
+
+def yell(*words):
+    uppercased = map(str.upper, words) # instead of using for loop
+    print(*uppercased)
+
+if __name__ == "__main__":
+    main()
+```
+
+## List Comprehension
+```python
+def main():
+    yell("This", "is", "CS50")
+
+def yell(*words):
+    uppercased = [arg.upper() for arg in words]
+    print(*uppercased)
+
+if __name__ == "__main__":
+    main()
+```
+
+# Generator and Iterator
+`print` created a list of value, while `yield` created an iterable object
