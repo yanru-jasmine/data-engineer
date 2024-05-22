@@ -256,3 +256,21 @@ coins = {"galleons": 100, "sickles": 50, "knuts": 25}
 
 print(total(**coins), "Knuts")
 ```
+
+# args vs. kwargs
+args is positional arguments, while kwargs is named / keywords arguments
+## args
+```python
+def f(*args, **kwargs):
+    print("Positional:", args)
+f(100, 50, 25)
+```
+return `Positional: (100, 50, 25)`
+
+##kwargs
+```python
+def f(*args, **kwargs):
+    print("Named:", kwargs)
+f(galleons=100, sickles=50, knuts=25)
+```
+return `Named: {'galleons': 100, 'sickles': 50, 'knuts': 25}`
