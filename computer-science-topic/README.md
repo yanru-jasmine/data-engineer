@@ -234,3 +234,25 @@ def withdraw(n):
 if __name__ == "__main__":
     main()
 ```
+
+# unpacking
+## .split()
+## index
+## total + * for list
+```python
+def total(galleons, sickles, knuts):
+    return (galleons * 17 + sickles) * 29 + knuts
+
+coins = [100, 50, 25]
+
+print(total(*coins), "Knuts")
+```
+## total + ** for dictionary
+```python
+def total(galleons, sickles, knuts):
+    return (galleons * 17 + sickles) * 29 + knuts
+
+coins = {"galleons": 100, "sickles": 50, "knuts": 25}
+
+print(total(**coins), "Knuts")
+```
