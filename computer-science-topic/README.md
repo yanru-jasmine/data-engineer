@@ -87,7 +87,7 @@ images[0].save(
 # a class is an object or an instance
 class Student:
 
-    # Methods:
+    # Instance Methods:
     # __init__ method in Python is used to initialize objects of a class. It is also called a constructor.
     def __init__(self, name, house, patronus=None):
 
@@ -146,5 +146,91 @@ if __name__ == "__main__":
     main()
 ```
 
+## Class Methods
+
+```python
+class Student:
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house
+
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
+
+def main():
+    student = Student.get()
+    print(student)
 
 
+if __name__ == "__main__":
+    main()
+```
+
+## Static Methods
+
+## Inheritance
+create a class that “inherits” methods, variables, and attributes from another class.
+```python
+class Wizard:
+    def __init__(self, name):
+        if not name:
+            raise ValueError("Missing name")
+        self.name = name
+
+    ...
+
+
+class Student(Wizard):
+    def __init__(self, name, house):
+        super().__init__(name)
+        self.house = house
+
+    ...
+
+
+class Professor(Wizard):
+    def __init__(self, name, subject):
+        super().__init__(name)
+        self.subject = subject
+
+    ...
+
+
+wizard = Wizard("Albus")
+student = Student("Harry", "Gryffindor")
+professor = Professor("Severus", "Defense Against the Dark Arts")
+...
+```
+
+## global variables
+
+Utilizing our powers from our experience with object-oriented programming, we can modify our code to use a class instead of a global variable through:
+def __init__(self):
+        self._balance = 0
+
+```python
+balance = 0
+
+def main():
+    print("Balance:", balance)
+    deposit(100)
+    withdraw(50)
+    print("Balance:", balance)
+
+def deposit(n):
+    global balance
+    balance += n
+
+def withdraw(n):
+    global balance
+    balance -= n
+
+if __name__ == "__main__":
+    main()
+```
