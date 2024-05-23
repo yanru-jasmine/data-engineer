@@ -1,0 +1,8 @@
+- `cd` change directory
+- `cp` copy a file
+- `ls` list all files in the current driver
+- `mkdir` make directory (create a new folder)
+- `mv` move files 
+  - `mv hello hello.c` rename
+- `rm` remove
+- `rmdir` remove directory
