@@ -312,3 +312,10 @@ if __name__ == "__main__":
 `print` created a list of value, while `yield` created an iterable object
 
 # Compile
+1. preprocessing: convert #inclue lines to the underlying prototypes
+2. compiling: convert c into another language (assembly)
+3. assembling: convert assembly code to binary code
+4. linking: combine binary codes into one final file
+
+# Reverse Engineering
+convert machine code back to source code
