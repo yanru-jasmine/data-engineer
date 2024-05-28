@@ -319,3 +319,14 @@ if __name__ == "__main__":
 
 # Reverse Engineering
 convert machine code back to source code
+
+# Memory
+- bool    1 byte
+- int     4 bytes
+- long    8 bytes
+- float   4 bytes
+- double  8 bytes
+- char    1 byte
+- string
+
+# Array
