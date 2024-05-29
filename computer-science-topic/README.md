@@ -347,9 +347,23 @@ time to solve vs. size of problem
 O(n) O(n/2) -> functionally same
 O(log n)
 
-common Big O:
+Big O (upper bound - maximum steps to take):
 - O(n^2): shake every one's hand in the room
 - O(n*log n): 
 - O(n): linear search
 - O(log n): binary search
 - O(1): constant steps (everyone stands up at the same time)
+
+Ω omega (lower bound: as few as steps to take):
+- Ω(n^2)
+- Ω(n*log n)
+- Ω(n): count students in a room
+- Ω(log n)
+- Ω(1): linear search / binary search
+
+Θ theta (Big O and Omega are the same)
+- Θ(n^2)
+- Θ(n*log n)
+- Θ(n): count students in the room
+- Θ(log n)
+- Θ(1): 
