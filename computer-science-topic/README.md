@@ -330,3 +330,26 @@ convert machine code back to source code
 - string
 
 # Array
+continuous
+
+# Cryptography
+encryption: scramble the info so that only you and the recipient can receive it
+
+plaintext (message written in human language) + key -> |  cipher (an algorithm for encrypting or scrambling info in a reversible way)  |  ->  ciphertext
+
+# Algorithms
+## Linear Search
+search from left to right or right to left 
+## Binary Search
+search from the middle
+## running time (efficiency of algorithm)
+time to solve vs. size of problem
+O(n) O(n/2) -> functionally same
+O(log n)
+
+common Big O:
+- O(n^2): shake every one's hand in the room
+- O(n*log n): 
+- O(n): linear search
+- O(log n): binary search
+- O(1): constant steps (everyone stands up at the same time)
