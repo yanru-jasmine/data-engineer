@@ -351,7 +351,7 @@ Big O (upper bound - maximum steps to take):
 - O(n^2): shake every one's hand in the room
 - O(n*log n): 
 - O(n): linear search
-- O(log n): binary search
+- O(log n): binary search -> anything divide in half
 - O(1): constant steps (everyone stands up at the same time)
 
 Ω omega (lower bound: as few as steps to take):
@@ -366,4 +366,34 @@ Big O (upper bound - maximum steps to take):
 - Θ(n*log n)
 - Θ(n): count students in the room
 - Θ(log n)
-- Θ(1): 
+- Θ(1):
+
+# Sort
+- Selection Sort: search for the smallest and put at the left
+      n * (n-1) * (n-2) * ...
+    - O(n^2)
+    - Ω(n^2)
+- Bubble Sort: compare numbers next to each other and swap them if needed
+      (n-1) * (n-1)
+    - O(n^2)
+    - Ω(n^2)
+- merge sort: merge sorted halves
+    - O(n*log n)
+ 
+# Memory
+must use free after malloc
+garbage values: values of variables that you do not proactively set as you intended
+
+-------------
+machine code
+-------------
+globals
+-------------
+heap
+⬇️
+
+
+
+⬆️
+stack
+-------------
