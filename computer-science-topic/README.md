@@ -395,5 +395,5 @@ heap
 
 
 ⬆️
-stack
+stack (function varaibles)
 -------------
