@@ -343,6 +343,10 @@ search from left to right or right to left
 ## Binary Search
 search from the middle
 ## running time (efficiency of algorithm)
+Space efficiency - a measure of the amount of memory needed for an algorithm to execute.
+
+Time efficiency - a measure of amount of time for an algorithm to execute.
+
 time to solve vs. size of problem
 O(n) O(n/2) -> functionally same
 O(log n)
